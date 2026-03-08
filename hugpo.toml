@@ -1,0 +1,16 @@
+baseURL = "https://undersun-studio.com/"
+languageCode = "ja"
+title = "Undersun.Studio"
+theme = false
+
+[params]
+  description = "iOSアプリの企画・開発を行っています。"
+  email = "contact@undersun-studio.com"
+
+[pagination]
+  pagerSize = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

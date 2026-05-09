@@ -75,14 +75,25 @@
             height: 68px;
         }
         .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .nav-logo-svg {
+            height: 36px;
+            width: auto;
+            flex-shrink: 0;
+        }
+        .nav-logo-text {
             font-family: 'Noto Serif JP', serif;
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             font-weight: 600;
             color: var(--ink);
-            text-decoration: none;
             letter-spacing: 0.05em;
+            line-height: 1;
         }
-        .nav-logo .dot { color: var(--akane); }
+        .nav-logo-text .dot { color: var(--akane); }
 
         .nav-links {
             display: flex;
@@ -178,6 +189,21 @@
             text-align: center;
             padding: 120px 30px 80px;
             max-width: 780px;
+        }
+
+        /* Hero Logo */
+        .hero-logo-img {
+            height: 110px;
+            width: auto;
+            margin-bottom: 28px;
+            display: inline-block;
+            animation: float 3.5s ease-in-out infinite;
+            filter: drop-shadow(0 4px 28px rgba(192,57,43,0.4));
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50%       { transform: translateY(-12px); }
         }
 
         /* 朱印風バッジ */
@@ -661,13 +687,26 @@
             gap: 24px;
         }
         .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .footer-logo-svg {
+            height: 32px;
+            width: auto;
+            flex-shrink: 0;
+            opacity: 0.85;
+        }
+        .footer-logo-text {
             font-family: 'Noto Serif JP', serif;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 600;
             color: var(--white);
             letter-spacing: 0.06em;
+            line-height: 1;
         }
-        .footer-logo .dot { color: var(--akane); }
+        .footer-logo-text .dot { color: var(--akane); }
         .footer-nav {
             display: flex;
             gap: 28px;
@@ -733,7 +772,18 @@
     <!-- ===== Navigation ===== -->
     <nav id="navbar">
         <div class="nav-inner">
-            <a href="#" class="nav-logo">Undersun<span class="dot">.</span>Studio</a>
+            <a href="#" class="nav-logo">
+                <svg class="nav-logo-svg" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="30" cy="34" r="16" fill="#c0392b"/>
+                    <line x1="8" y1="50" x2="52" y2="50" stroke="#b8860b" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="30" y1="6"  x2="30" y2="13" stroke="#c0392b" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="42" y1="10" x2="38" y2="16" stroke="#c0392b" stroke-width="2.2" stroke-linecap="round"/>
+                    <line x1="49" y1="21" x2="43" y2="24" stroke="#c0392b" stroke-width="2.2" stroke-linecap="round"/>
+                    <line x1="18" y1="10" x2="22" y2="16" stroke="#c0392b" stroke-width="2.2" stroke-linecap="round"/>
+                    <line x1="11" y1="21" x2="17" y2="24" stroke="#c0392b" stroke-width="2.2" stroke-linecap="round"/>
+                </svg>
+                <span class="nav-logo-text">Undersun<span class="dot">.</span>Studio</span>
+            </a>
             <button class="hamburger" id="hamburger" aria-label="メニューを開く">
                 <span></span><span></span><span></span>
             </button>
@@ -755,6 +805,18 @@
         <div class="hero-circle hero-circle-2"></div>
 
         <div class="hero-content">
+            <!-- Hero Logo SVG -->
+            <svg class="hero-logo-img" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Undersun.Studio logo">
+                <circle cx="60" cy="72" r="36" fill="rgba(192,57,43,0.15)"/>
+                <circle cx="60" cy="72" r="28" fill="#c0392b"/>
+                <line x1="14" y1="100" x2="106" y2="100" stroke="#b8860b" stroke-width="3" stroke-linecap="round"/>
+                <line x1="60" y1="8"  x2="60" y2="22" stroke="#c0392b" stroke-width="4" stroke-linecap="round"/>
+                <line x1="88" y1="16" x2="80" y2="28" stroke="#c0392b" stroke-width="3.5" stroke-linecap="round"/>
+                <line x1="106" y1="42" x2="93" y2="47" stroke="#c0392b" stroke-width="3.5" stroke-linecap="round"/>
+                <line x1="32" y1="16" x2="40" y2="28" stroke="#c0392b" stroke-width="3.5" stroke-linecap="round"/>
+                <line x1="14" y1="42" x2="27" y2="47" stroke="#c0392b" stroke-width="3.5" stroke-linecap="round"/>
+                <circle cx="52" cy="62" r="7" fill="rgba(255,255,255,0.12)"/>
+            </svg>
             <span class="hero-badge">iOS App Studio · Japan</span>
             <h1>アイデアを、<br><span class="accent">手のひら</span>へ。</h1>
             <p class="hero-en">Undersun · Studio</p>
@@ -909,7 +971,18 @@
     <!-- ===== Footer ===== -->
     <footer>
         <div class="footer-inner">
-            <div class="footer-logo">Undersun<span class="dot">.</span>Studio</div>
+            <a href="#" class="footer-logo">
+                <svg class="footer-logo-svg" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="30" cy="34" r="16" fill="#c0392b"/>
+                    <line x1="8" y1="50" x2="52" y2="50" stroke="#b8860b" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="30" y1="6"  x2="30" y2="13" stroke="#c0392b" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="42" y1="10" x2="38" y2="16" stroke="#c0392b" stroke-width="2.2" stroke-linecap="round"/>
+                    <line x1="49" y1="21" x2="43" y2="24" stroke="#c0392b" stroke-width="2.2" stroke-linecap="round"/>
+                    <line x1="18" y1="10" x2="22" y2="16" stroke="#c0392b" stroke-width="2.2" stroke-linecap="round"/>
+                    <line x1="11" y1="21" x2="17" y2="24" stroke="#c0392b" stroke-width="2.2" stroke-linecap="round"/>
+                </svg>
+                <span class="footer-logo-text">Undersun<span class="dot">.</span>Studio</span>
+            </a>
             <ul class="footer-nav">
                 <li><a href="#about">事業内容</a></li>
                 <li><a href="#works">アプリ</a></li>

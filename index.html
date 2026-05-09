@@ -773,46 +773,7 @@
     <nav id="navbar">
         <div class="nav-inner">
             <a href="#" class="nav-logo">
-                <!-- Shutter + Plant + Sun logo (small) -->
-                <svg class="nav-logo-svg" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <defs>
-                    <clipPath id="nav-circle-clip">
-                      <circle cx="30" cy="30" r="27"/>
-                    </clipPath>
-                  </defs>
-                  <!-- Shutter blades -->
-                  <g clip-path="url(#nav-circle-clip)">
-                    <path d="M30 3 L57 18 L45 30 Z"   fill="#2c2c2e"/>
-                    <path d="M57 18 L57 42 L42 34 Z"  fill="#3a3a3c"/>
-                    <path d="M57 42 L30 57 L30 42 Z"  fill="#2c2c2e"/>
-                    <path d="M30 57 L3 42 L18 30 Z"   fill="#3a3a3c"/>
-                    <path d="M3 42 L3 18 L18 26 Z"    fill="#2c2c2e"/>
-                    <path d="M3 18 L30 3 L30 18 Z"    fill="#3a3a3c"/>
-                  </g>
-                  <!-- Center white circle -->
-                  <circle cx="30" cy="30" r="13" fill="#f5f0e8"/>
-                  <!-- Sun rays (gold) -->
-                  <g stroke="#b8860b" stroke-width="1.4" stroke-linecap="round">
-                    <line x1="30" y1="19" x2="30" y2="22"/>
-                    <line x1="35.5" y1="20.2" x2="34.2" y2="22.9"/>
-                    <line x1="39.8" y1="24.5" x2="37.1" y2="25.8"/>
-                    <line x1="41" y1="30" x2="38" y2="30"/>
-                    <line x1="39.8" y1="35.5" x2="37.1" y2="34.2"/>
-                    <line x1="35.5" y1="39.8" x2="34.2" y2="37.1"/>
-                    <line x1="30" y1="41" x2="30" y2="38"/>
-                    <line x1="24.5" y1="39.8" x2="25.8" y2="37.1"/>
-                    <line x1="20.2" y1="35.5" x2="22.9" y2="34.2"/>
-                    <line x1="19" y1="30" x2="22" y2="30"/>
-                    <line x1="20.2" y1="24.5" x2="22.9" y2="25.8"/>
-                    <line x1="24.5" y1="20.2" x2="25.8" y2="22.9"/>
-                  </g>
-                  <!-- Plant sprout -->
-                  <line x1="30" y1="38" x2="30" y2="27" stroke="#5a7a3a" stroke-width="1.5" stroke-linecap="round"/>
-                  <!-- Left leaf -->
-                  <path d="M30 32 Q25 29 24 25 Q28 25 30 29 Z" fill="#6a9a45"/>
-                  <!-- Right leaf -->
-                  <path d="M30 32 Q35 29 36 25 Q32 25 30 29 Z" fill="#7ab850"/>
-                </svg>
+                <img src="logo_72.png" class="nav-logo-svg" alt="Undersun.Studio logo">
                 <span class="nav-logo-text">Undersun<span class="dot">.</span>Studio</span>
             </a>
             <button class="hamburger" id="hamburger" aria-label="メニューを開く">
@@ -836,68 +797,8 @@
         <div class="hero-circle hero-circle-2"></div>
 
         <div class="hero-content">
-            <!-- Hero Logo SVG (large) -->
-            <svg class="hero-logo-img" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Undersun.Studio logo">
-              <defs>
-                <clipPath id="hero-circle-clip">
-                  <circle cx="60" cy="60" r="54"/>
-                </clipPath>
-                <!-- Blade gradient for depth -->
-                <linearGradient id="blade-g1" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#3a3a3c"/>
-                  <stop offset="100%" stop-color="#1c1c1e"/>
-                </linearGradient>
-                <linearGradient id="blade-g2" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#4a4a4e"/>
-                  <stop offset="100%" stop-color="#2c2c2e"/>
-                </linearGradient>
-              </defs>
-              <!-- Outer ring border -->
-              <circle cx="60" cy="60" r="56" stroke="#3a3a3c" stroke-width="1" fill="none"/>
-              <!-- Shutter blades (6 blades, clockwise spiral) -->
-              <g clip-path="url(#hero-circle-clip)">
-                <path d="M60 6  L114 36 L90 60 Z"  fill="url(#blade-g1)"/>
-                <path d="M114 36 L114 84 L84 68 Z" fill="url(#blade-g2)"/>
-                <path d="M114 84 L60 114 L60 84 Z" fill="url(#blade-g1)"/>
-                <path d="M60 114 L6 84  L36 60 Z"  fill="url(#blade-g2)"/>
-                <path d="M6 84  L6 36  L36 52 Z"   fill="url(#blade-g1)"/>
-                <path d="M6 36  L60 6  L60 36 Z"   fill="url(#blade-g2)"/>
-                <!-- Thin white separator lines between blades -->
-                <line x1="60" y1="6"   x2="90" y2="60"  stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
-                <line x1="114" y1="36" x2="84" y2="68"  stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
-                <line x1="114" y1="84" x2="60" y2="84"  stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
-                <line x1="60" y1="114" x2="36" y2="60"  stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
-                <line x1="6" y1="84"  x2="36" y2="52"   stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
-                <line x1="6" y1="36"  x2="60" y2="36"   stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
-              </g>
-              <!-- Center circle (washi cream) -->
-              <circle cx="60" cy="60" r="28" fill="#f5f0e8"/>
-              <!-- Sun rays (gold) -->
-              <g stroke="#b8860b" stroke-width="2.2" stroke-linecap="round">
-                <line x1="60" y1="36" x2="60" y2="42"/>
-                <line x1="70" y1="38.2" x2="67.3" y2="43.5"/>
-                <line x1="78.2" y1="44.5" x2="73.5" y2="47.3"/>
-                <line x1="82" y1="55" x2="76" y2="55"/>
-                <line x1="80.5" y1="65.5" x2="75" y2="62.8"/>
-                <line x1="75" y1="74" x2="71" y2="69.5"/>
-                <line x1="66" y1="79" x2="64" y2="73.5"/>
-                <line x1="54" y1="79" x2="56" y2="73.5"/>
-                <line x1="45" y1="74" x2="49" y2="69.5"/>
-                <line x1="39.5" y1="65.5" x2="45" y2="62.8"/>
-                <line x1="38" y1="55" x2="44" y2="55"/>
-                <line x1="39.8" y1="44.5" x2="44.5" y2="47.3"/>
-                <line x1="48" y1="38.2" x2="50.7" y2="43.5"/>
-              </g>
-              <!-- Plant stem -->
-              <line x1="60" y1="76" x2="60" y2="55" stroke="#5a7a3a" stroke-width="2.5" stroke-linecap="round"/>
-              <!-- Left leaf -->
-              <path d="M60 65 Q50 58 47 49 Q56 50 60 60 Z" fill="#6a9a45"/>
-              <!-- Right leaf -->
-              <path d="M60 65 Q70 58 73 49 Q64 50 60 60 Z" fill="#7ab850"/>
-              <!-- Small highlight on leaves -->
-              <path d="M60 65 Q53 61 50 55" stroke="rgba(255,255,255,0.3)" stroke-width="0.8" fill="none"/>
-              <path d="M60 65 Q67 61 70 55" stroke="rgba(255,255,255,0.3)" stroke-width="0.8" fill="none"/>
-            </svg>
+            <!-- Hero Logo -->
+            <img src="logo_220.png" class="hero-logo-img" alt="Undersun.Studio logo">
             <span class="hero-badge">iOS App Studio · Japan</span>
             <h1>アイデアを、<br><span class="accent">手のひら</span>へ。</h1>
             <p class="hero-en">Undersun · Studio</p>
@@ -1053,41 +954,7 @@
     <footer>
         <div class="footer-inner">
             <a href="#" class="footer-logo">
-                <!-- Shutter + Plant + Sun logo (footer, dark bg) -->
-                <svg class="footer-logo-svg" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <defs>
-                    <clipPath id="footer-circle-clip">
-                      <circle cx="30" cy="30" r="27"/>
-                    </clipPath>
-                  </defs>
-                  <circle cx="30" cy="30" r="28" stroke="rgba(255,255,255,0.2)" stroke-width="0.8" fill="none"/>
-                  <g clip-path="url(#footer-circle-clip)">
-                    <path d="M30 3 L57 18 L45 30 Z"   fill="rgba(255,255,255,0.18)"/>
-                    <path d="M57 18 L57 42 L42 34 Z"  fill="rgba(255,255,255,0.12)"/>
-                    <path d="M57 42 L30 57 L30 42 Z"  fill="rgba(255,255,255,0.18)"/>
-                    <path d="M30 57 L3 42 L18 30 Z"   fill="rgba(255,255,255,0.12)"/>
-                    <path d="M3 42 L3 18 L18 26 Z"    fill="rgba(255,255,255,0.18)"/>
-                    <path d="M3 18 L30 3 L30 18 Z"    fill="rgba(255,255,255,0.12)"/>
-                  </g>
-                  <circle cx="30" cy="30" r="13" fill="rgba(255,255,255,0.08)"/>
-                  <g stroke="#b8860b" stroke-width="1.4" stroke-linecap="round">
-                    <line x1="30" y1="19" x2="30" y2="22"/>
-                    <line x1="35.5" y1="20.2" x2="34.2" y2="22.9"/>
-                    <line x1="39.8" y1="24.5" x2="37.1" y2="25.8"/>
-                    <line x1="41" y1="30" x2="38" y2="30"/>
-                    <line x1="39.8" y1="35.5" x2="37.1" y2="34.2"/>
-                    <line x1="35.5" y1="39.8" x2="34.2" y2="37.1"/>
-                    <line x1="30" y1="41" x2="30" y2="38"/>
-                    <line x1="24.5" y1="39.8" x2="25.8" y2="37.1"/>
-                    <line x1="20.2" y1="35.5" x2="22.9" y2="34.2"/>
-                    <line x1="19" y1="30" x2="22" y2="30"/>
-                    <line x1="20.2" y1="24.5" x2="22.9" y2="25.8"/>
-                    <line x1="24.5" y1="20.2" x2="25.8" y2="22.9"/>
-                  </g>
-                  <line x1="30" y1="38" x2="30" y2="27" stroke="#6aaa45" stroke-width="1.5" stroke-linecap="round"/>
-                  <path d="M30 32 Q25 29 24 25 Q28 25 30 29 Z" fill="#7ac850"/>
-                  <path d="M30 32 Q35 29 36 25 Q32 25 30 29 Z" fill="#8ad860"/>
-                </svg>
+                <img src="logo_72.png" class="footer-logo-svg" alt="Undersun.Studio logo">
                 <span class="footer-logo-text">Undersun<span class="dot">.</span>Studio</span>
             </a>
             <ul class="footer-nav">
